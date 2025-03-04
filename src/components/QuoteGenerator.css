@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+.quote-generator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://tse3.mm.bing.net/th?id=OIP.X_o0QaR6y_pHo43icl5I0AHaEK&pid=Api&P=0&h=180');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quote-container {
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.quote-content {
+  padding: 20px 0;
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+  padding: 20px 40px;
+}
+
+blockquote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+blockquote:before {
+  content: '"';
+  font-size: 5rem;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  color: #ccc;
+  font-family: 'Playfair Display', serif;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.author-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 15px;
+}
+
+blockquote footer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666;
+}
+
+blockquote cite {
+  font-style: normal;
+  font-weight: 700;
+  color: #444;
+}
+
+.quote-button {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-button:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quote-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 40px 0;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quote-container {
+    width: 90%;
+    padding: 25px;
+  }
+  
+  blockquote p {
+    font-size: 1.4rem;
+  }
+  
+  .author-image {
+    width: 60px;
+    height: 60px;
+  }
+}
